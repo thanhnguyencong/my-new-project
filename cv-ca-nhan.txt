@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>Tạo trang CV cá nhân</h1>
+<p>
+<br>
+Họ và tên:Nguyễn Công Thành
+<br>
+Địa chỉ: Hoàng Mai
+<br>
+Số điện thoại: 0123456789
+<br>
+
+</p>
+
+</body>
+</html>
