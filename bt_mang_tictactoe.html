@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tiktactoe</title>
+</head>
+<body>
+let row = [a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a]
+let collum = [b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b]
+let a = "<select name="value">
+    <option value="X" id="giatri">X</option>
+    <option value="O" id="giatri">O</option>
+</select>"
+let b=a
+<script>
+    //nhận giá trị
+    function getvalue() {
+        document.getElementById("giatri").value
+
+    }
+    //thay doi du lieu, dien quan co
+    function changeValue() {
+
+    }
+    //check collum
+    function checkCollums() {
+        for (let i = 0; i < collum.length; i++) {
+            for (let j = 0; j < row.length; j++) {
+                if (a[j]==a[j+1] && a[j]=a[j+2] && a[j]=a[j+3] && a[j]=a[j+4] && a[j]=a[j+5])
+                    document.write("end game")
+            }
+        }
+    }
+    //check row
+    function checkRows() {
+        for (let i = 0; i < row.length; i++) {
+            for (let j = 0; j < collum.length; j++) {
+                if (b[j]==b[j+1] && b[j]=b[j+2] && b[j]=b[j+3] && b[j]=b[j+4] && b[j]=b[j+5])
+                    document.write("end game")
+            }
+        }
+    }
+    //check diagonal
+    function checkDiagonals() {
+
+    }
+    //clear&reset
+    function clear&reset() {
+
+    }
+
+</script>
+
+</body>
+</html>
