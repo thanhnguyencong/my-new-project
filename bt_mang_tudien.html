@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<input>
+let a = ["hello","bye","say","see"];
+let b= ["chào", "tạm biệt","nói","nhìn"];
+<input type="text" id="word"></input>
+<button type="button" onclick="main()">translate</button>
+<script>
+    function getwold() {
+        n = document.getElementById("word").innerText;
+    }
+    function program() {
+        for (let i = 0; i < a.length; i++) {
+            if (n == a[j] || n == b[i] ){
+                if (n == a[i])
+                    document.write(b[i]);
+                if (n == b[i])
+                    document.write(a[i])
+            } else
+                document.write("không tìm thấy");
+        }
+    }
+    function main() {
+        getwold();
+        program();
+
+    }
+    main();
+</script>
+</body>
+</html>
