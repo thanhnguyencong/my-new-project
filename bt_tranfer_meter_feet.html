@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi mét và feet</title>
+</head>
+<body>
+<form>
+    <input type="text" id="numMeter">Meter</input>
+    <input type="button" value="tranfer" onclick="tranfer()"></input>
+    <input type="text" id="numFeet">Feet</input>
+</form>
+    <script>
+        function tranfer(){
+            if(document.getElementById("numMeter").value !=0){
+                let met = document.getElementById("numMeter").value;
+                let feet = met/0.305;
+                document.getElementById("numFeet").value = feet;
+            }
+            if(document.getElementById("numFeet").value !=0){
+                let feet = document.getElementById("numFeet").value;
+                let met = feet*0.305;
+                document.getElementById("numMeter").value = met;
+            }
+        }
+
+    </script>
+</body>
+</html>
