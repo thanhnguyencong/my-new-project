@@ -7,7 +7,7 @@ function Collision(ball, gameObject) {
     let rightSideOfObject = gameObject.position.x + gameObject.width;
     let bottomOfObject = gameObject.position.y + gameObject.height;
 
-    if (bottomOfBall>= topOfHand
+    if (bottomOfBall>= topOfOject
         && topOfBall <= bottomOfObject
         && ball.position.x >= leftSideOfObject
         && ball.position.x + ball.size <= rightSideOfObject) {

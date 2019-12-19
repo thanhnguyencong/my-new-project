@@ -42,10 +42,6 @@ class Ball {
             this.reset();
         }
 
-        if (this.position(this,this.game.speed)){
-            this.speed.y = -this.speed.y;
-            this.position.y = this.game.speed.position.y - this.size;
-        }
         if(Collision(this, this.game.hand)){
             this.speed.y = -this.speed.y;
             this.position.y = this.game.hand.position.y - this.size;

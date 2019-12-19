@@ -60,7 +60,7 @@ class Game{
             ctx.fill();
 
             ctx.font = "30px Arial";
-            cxt.fillStyle = "white";
+            ctx.fillStyle = "white";
             ctx.textAlign = "center";
             ctx.fillText("Pause", this.gameWidth / 2, this.gameHeight / 2);
         }
@@ -82,7 +82,7 @@ class Game{
             ctx.fill();
 
             ctx.font = "30px Arial";
-            cxt.fillStyle = "white";
+            ctx.fillStyle = "white";
             ctx.textAlign = "center";
             ctx.fillText("Game Over", this.gameWidth / 2, this.gameHeight / 2);
         }
