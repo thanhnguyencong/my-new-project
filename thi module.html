@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<strong>Câu 1:</strong><br>
+//chưa tối ưu
+<script>
+    function Array(a) {
+        this.a=a
+    }
+    function findMinScore(){
+        let min=a[0]
+        for(let i=0 , i<a.length , i++){
+            if(min>a[i])
+                min=a[i];
+        }
+        return min;
+    }
+    function displayMin(){
+        document.write(min);
+    }
+</script>
+<hr>
+
+<strong>Câu 2:</strong>
+<input type="text" id="vitri">
+<button type="button" onclick="main()">Remove</button>
+<script>
+    let k
+    function getvalue(){
+        k = parseInt(document.getElementById("vitri").value);
+    }
+    function RemoveFromArray(){
+        let  a = [1,2,3,4,5,6,7,8];
+        if(k>=0&&k<=a.length-1){
+            for (let i = a.length - 1; i >= k  ; i--) {
+                a[i] = a[i+1];
+                a.pop();
+            }
+            document.write("<br>Mang sau remove: ");
+            for (let j = 0; j < a.length; j++) {
+                document.write(a[j] + " ");
+            }
+        }else{
+            alert("Nhap sai vi tri");
+        }
+
+    }
+    function main() {
+
+        getvalue();
+
+        RemoveFromArray();
+    }
+</script>
+<hr>
+
+<strong>Câu 3:</strong>
+<input type="text" id="num">
+<script>
+    function isPrime() {
+        let x = parseInt(document.getElementById("num").value);
+        var flag = true;
+        for (let i = 1; i < x; i++) {
+            if (x % i == 0){
+                flag = false;
+                return flag;
+            } else {
+                flag = true;
+                return flag;
+            }
+        }
+        if (flag == true){
+            document.write("true");
+        } else(flag == false){
+            document.write("false");
+        }
+    }
+        isPrime();
+
+</script>
+<hr>
+
+<strong>Câu 4:</strong>
+<input type="text" id="width">Width</input>
+<input type="text" id="height">Height</input>
+<canvas id="Rectangle" width="500" height="500" style="border:1px solid #c3c3c3;"></canvas>
+<script src="rectangle.js"></script>
+<script src="draw.js"></script>
+</body>
+</html>
