@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <form>
+        <p>
+        <input type="text" id="sothang" width="200">
+        <button type="button" onclick="tinhsongay()">Tính số ngày</button>
+        </p>
+     <h3><b><p id="result"></p></b></h3>
+    </form>
+ <script>
+        function tinhsongay(){
+         let sothang=parseInt(document.getElementById('sothang').value);
+        let songay;
+            switch(sothang){
+            case 1,3,5,7,8,10,12:
+            songay = 31
+            break;
+
+            case 2:
+            songay = "28 hoặc 29"
+            break;
+
+            case 4,6,9,11:
+            songay = 30
+            break;
+            };
+         document.getElementById('result').innerHTML="tháng "+sothang+" có "+songay+" ngày";
+        }
+ </script>
+</body>
+
+</html>
